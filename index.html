@@ -1,13 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width,initial-scale=1"/>
-<title>ElitePips</title>
-<meta name="description" content="Answer one quick question to join free Forex signals on Telegram. Limited access available!"/>
-<meta name="theme-color" content="#001022">
-
-<!-- Meta Pixel -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gautam Jha  - Market Expert</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+<!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -17,180 +21,280 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1593721464926438');
+fbq('init', '1992019901462314');
 fbq('track', 'PageView');
 </script>
-
-<style>
-:root{
-  --accent1:#ff7a00;
-  --accent2:#ff4d00;
-  --text:#e6eefb;
-  --muted:#bfcfe6;
-  --card-bg:rgba(6,8,15,0.9);
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html,body{height:100%}
-body{
-  background:linear-gradient(160deg,#001022,#002a4a);
-  display:flex;align-items:center;justify-content:center;
-  padding:18px;color:var(--text);
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
-}
-.container{
-  width:100%;max-width:640px;
-  background:var(--card-bg);
-  border-radius:14px;padding:20px;
-  box-shadow:0 24px 60px rgba(0,10,30,0.6);
-  position:relative;overflow:hidden;color:var(--text);
-}
-.progressWrap{display:flex;align-items:center;gap:10px;margin-bottom:14px}
-.progress{flex:1;height:9px;background:rgba(255,255,255,0.03);border-radius:999px;overflow:hidden}
-.progress>i{display:block;height:100%;background:linear-gradient(90deg,var(--accent1),var(--accent2));width:0;transition:width .45s ease}
-.progressNum{min-width:44px;text-align:right;color:var(--muted);font-weight:700;font-size:13px}
-.question{animation:fadeIn .32s ease;text-align:center;margin-bottom:14px}
-@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-.hype{
-  display:inline-block;padding:10px 14px;border-radius:12px;font-weight:900;font-size:20px;
-  background:linear-gradient(90deg,#ffd9b3,#ffb48a);color:#1b0520;
-  box-shadow:0 8px 30px rgba(255,120,0,0.12);
-}
-.hype.small{font-size:16px;padding:8px 12px}
-.pulse{animation:pulse 1.6s infinite}
-@keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.03)}100%{transform:scale(1)}}
-.options{display:flex;flex-direction:column;gap:10px;margin-top:12px}
-.option{
-  background:rgba(255,255,255,0.02);
-  border-radius:12px;padding:12px 14px;cursor:pointer;font-weight:800;text-align:center;
-  border:1px solid rgba(255,255,255,0.04);
-  box-shadow:0 8px 30px rgba(0,0,0,0.5);
-  transition:transform .16s,box-shadow .16s,background .16s;
-}
-.option:hover{transform:translateY(-6px);box-shadow:0 18px 46px rgba(255,90,0,0.12);background:linear-gradient(90deg,rgba(255,90,0,0.08),rgba(255,150,0,0.06));}
-.option.selected{background:linear-gradient(90deg,rgba(255,120,0,0.18),rgba(255,60,0,0.12));color:#fff;transform:translateY(-8px)}
-.thankyou{text-align:center;padding:6px}
-.thank-h{font-size:20px;margin:6px 0;font-weight:900}
-.thank-sub{color:var(--muted);margin-bottom:12px}
-.join-btn{
-  display:inline-block;position:relative;overflow:hidden;
-  background:linear-gradient(90deg,#ff7a00,#ff4d00);
-  color:#fff;padding:12px 18px;border-radius:12px;font-weight:900;text-decoration:none;
-  box-shadow:0 14px 40px rgba(255,90,0,0.18);
-}
-.join-btn::after{content:'';position:absolute;left:-50%;top:0;width:40%;height:100%;background:linear-gradient(120deg,rgba(255,255,255,0)0%,rgba(255,255,255,0.14)50%,rgba(255,255,255,0)100%);transform:skewX(-20deg);filter:blur(6px);animation:shine 3.4s linear infinite}
-@keyframes shine{0%{left:-60%}100%{left:120%}}
-.fomo{background:linear-gradient(90deg,#ffe6d6,#ffd0b3);color:#2b0a00;padding:8px 12px;border-radius:10px;font-weight:800;display:inline-block;margin:10px 0;font-size:13px}
-.small{font-size:13px;color:var(--muted);margin-top:8px}
-.row{display:flex;gap:10px;justify-content:center;margin-top:12px}
-.btn-ghost{padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:var(--text);font-weight:700;text-decoration:none;cursor:pointer}
-@media (max-width:520px){.container{padding:14px}.hype{font-size:18px}}
-</style>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1992019901462314&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .btn-glow {
+            box-shadow: 0 4px 14px rgba(10, 102, 228, 0.35);
+            transition: all 0.2s ease;
+        }
+        .btn-glow:active {
+            transform: scale(0.98);
+        }
+        @keyframes pulse-ring {
+            0% { transform: scale(0.95); opacity: 0.8; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(0.95); opacity: 0.8; }
+        }
+        .pulse-dot {
+            animation: pulse-ring 1.8s infinite ease-in-out;
+        }
+    
+    </style>
 </head>
+<body class="min-h-screen flex flex-col justify-between text-gray-800 antialiased selection:bg-blue-100">
 
-<body>
-<main class="container" id="card">
-  <div class="progressWrap">
-    <div class="progress"><i id="bar"></i></div>
-    <div class="progressNum" id="progNum">0%</div>
-  </div>
-  <div id="q-box"></div>
-</main>
+    <!-- Compact Header -->
+    <header class="w-full bg-white border-b border-gray-100 py-2 px-3 sm:px-6 flex justify-between items-center shadow-xs sticky top-0 z-40">
+        <div class="flex items-center space-x-2">
+            <img src="Gautam.jpeg" 
+                 alt="Logo" 
+                 class="w-7 h-7 rounded-full object-cover border border-blue-500 shadow-xs"
+                 onerror="this.src='https://placehold.co/80x80/0a66e4/ffffff?text=PB';">
+            <div>
+                <span class="font-extrabold text-gray-900 text-xs sm:text-sm block leading-tight tracking-tight">Stock Learner</span>
+                <span class="text-[9px] text-blue-600 font-bold uppercase leading-none block">Market Expert</span>
+            </div>
+        </div>
+        
+        <a href="https://t.me/+v-nc1hLPg89hYTFl" target="_blank" class="inline-flex items-center px-3 py-1 bg-blue-50 hover:bg-blue-100 text-blue-600 font-bold text-[11px] rounded-full transition">
+            <i class="fa-brands fa-telegram text-xs mr-1 text-blue-500"></i> Join
+        </a>
+    </header>
 
-<script>
-/* Deep-link setup */
-const telegramAppLink = "tg://join?invite=ZrjDtoQ9Tgw3ZWQ1";
-const telegramWebLink = "https://t.me/+ZrjDtoQ9Tgw3ZWQ1";
+    <!-- Main Content Container -->
+    <main class="flex-grow flex items-center justify-center px-3 py-4 sm:py-6">
+        <div class="w-full max-w-[420px] bg-transparent flex flex-col items-center text-center space-y-3.5">
 
-let answered=false;
-const qBox=document.getElementById('q-box'),
-      bar=document.getElementById('bar'),
-      progNum=document.getElementById('progNum');
+            <!-- Online Badge -->
+            <div class="inline-flex items-center space-x-1.5 bg-emerald-50 text-emerald-700 text-[11px] font-bold px-3 py-1 rounded-full border border-emerald-200/80 shadow-xs">
+                <span class="w-2 h-2 bg-emerald-500 rounded-full pulse-dot"></span>
+                <span>5,947 Traders Online</span>
+            </div>
 
-function renderSingleQuestion(){
-  qBox.innerHTML = `
-    <div class="question">
-      <div class="hype pulse">🔥 LIVE Forex signals — traders are booking entries now!</div>
-      <div style="height:10px"></div>
-      <div class="options">
-        <div class="option" data-val="yes">Yes — show me live setups</div>
-        <div class="option" data-val="no">No — not right now</div>
-      </div>
-      <div class="small">Tap one — it only takes a second. Limited access for serious traders only.</div>
+            <!-- Profile Image & Title -->
+            <div class="flex flex-col items-center space-y-1.5">
+                <div class="relative">
+                    <div class="w-20 h-20 rounded-full p-0.5 bg-gradient-to-tr from-blue-500 to-indigo-600 shadow-sm">
+                        <img src="Gautam.jpeg" 
+                             alt="Gautam Jha Profile" 
+                             class="w-full h-full object-cover rounded-full border border-white"
+                             onerror="this.src='https://placehold.co/200x200/1e293b/ffffff?text=Pankaj';">
+                    </div>
+                </div>
+
+                <div>
+                    <h1 class="text-xl font-black text-gray-900 tracking-tight uppercase leading-tight">Stock Learner</h1>
+                    <p class="text-blue-600 font-bold text-xs mt-0.5 flex items-center justify-center gap-1">
+                        <span>🏆</span> India's No.1 Stock Market Channel
+                    </p>
+                </div>
+
+                <!-- Rating -->
+                <div class="flex flex-col items-center">
+                    <div class="flex text-amber-400 space-x-0.5 text-xs">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="text-[10px] font-semibold text-gray-500 mt-0.5">4.9/5 (2,340 Reviews)</p>
+                </div>
+            </div>
+
+            <!-- Primary CTA Button -->
+            <a href="https://t.me/+NdcrRn1MLGcyOThl" target="_blank" class="w-full py-3 px-4 bg-[#0a66e4] hover:bg-[#0855c4] active:bg-[#0747a6] text-white font-extrabold text-sm rounded-xl btn-glow flex items-center justify-center space-x-2 transition">
+                <span>Join Free Telegram Channel</span>
+                <span class="text-base">→</span>
+            </a>
+
+            <!-- Compact Stats Grid -->
+            <div class="grid grid-cols-3 gap-2 w-full">
+                <div class="bg-white py-2 px-1 rounded-xl border border-gray-100 shadow-xs flex flex-col items-center justify-center">
+                    <span class="text-base font-black text-gray-900">50K+</span>
+                    <span class="text-[10px] font-medium text-gray-500">Members</span>
+                </div>
+                <div class="bg-white py-2 px-1 rounded-xl border border-gray-100 shadow-xs flex flex-col items-center justify-center">
+                    <span class="text-base font-black text-gray-900">5+</span>
+                    <span class="text-[10px] font-medium text-gray-500">Years</span>
+                </div>
+                <div class="bg-white py-2 px-1 rounded-xl border border-gray-100 shadow-xs flex flex-col items-center justify-center">
+                    <span class="text-base font-black text-gray-900">95%</span>
+                    <span class="text-[10px] font-medium text-gray-500">Accuracy</span>
+                </div>
+            </div>
+
+            <!-- Headline Section -->
+            <div class="space-y-0.5 pt-1">
+                <h2 class="text-base font-black text-gray-900 leading-snug">
+                    Get <span class="text-blue-600 uppercase">FREE</span> Daily Calls
+                </h2>
+                <p class="text-xs font-bold text-gray-700">
+                    for NIFTY, BANKNIFTY & SENSEX
+                </p>
+                <p class="text-[10px] text-gray-500 font-medium pt-0.5">
+                    Join thousands of traders getting daily market analysis
+                </p>
+            </div>
+
+            <!-- Limited Offer Banner -->
+            <div class="w-full bg-amber-50/90 border border-amber-200/80 rounded-xl py-2 px-3 flex items-center justify-center text-amber-800 font-bold text-xs shadow-xs">
+                <span>🔥 Limited FREE Access Available</span>
+            </div>
+
+            <!-- Feature List -->
+            <div class="w-full space-y-2">
+                <div class="w-full bg-white p-2.5 rounded-xl border border-gray-100 shadow-xs flex items-center space-x-2.5 text-left">
+                    <span class="text-base">📊</span>
+                    <span class="font-bold text-gray-800 text-xs">Daily Nifty & BankNifty Levels</span>
+                </div>
+                <div class="w-full bg-white p-2.5 rounded-xl border border-gray-100 shadow-xs flex items-center space-x-2.5 text-left">
+                    <span class="text-base">🎓</span>
+                    <span class="font-bold text-gray-800 text-xs">Educational Market Analysis</span>
+                </div>
+                <div class="w-full bg-white p-2.5 rounded-xl border border-gray-100 shadow-xs flex items-center space-x-2.5 text-left">
+                    <span class="text-base">👥</span>
+                    <span class="font-bold text-gray-800 text-xs">50,000+ Subscribers Community</span>
+                </div>
+            </div>
+
+            <!-- Secondary CTA Button -->
+            <a href="https://t.me/+NdcrRn1MLGcyOThl" target="_blank" class="w-full py-3 px-4 bg-[#0a66e4] hover:bg-[#0855c4] active:bg-[#0747a6] text-white font-extrabold text-sm rounded-xl btn-glow flex items-center justify-center space-x-2 transition">
+                <span>Join Free Telegram Channel</span>
+                <span class="text-base">→</span>
+            </a>
+
+            <!-- Brief Inline Disclaimer -->
+            <p class="text-[10px] text-gray-400 leading-tight px-2 pt-1">
+                <strong class="font-semibold text-gray-500">Disclaimer:</strong>
+                This channel is for educational purposes only. Trading involves market risk.
+            </p>
+
+        </div>
+    </main>
+
+    <!-- Compact Footer Section -->
+    <footer class="w-full bg-white border-t border-gray-200 py-3 px-3 mt-4">
+        <div class="max-w-md mx-auto flex flex-col items-center space-y-2">
+            <!-- Navigation Links -->
+            <div class="flex flex-wrap justify-center gap-2.5 text-[11px] font-bold text-gray-600">
+                <button onclick="openModal('aboutModal')" class="hover:text-blue-600 active:text-blue-700 transition">About Us</button>
+                <span class="text-gray-300">•</span>
+                <button onclick="openModal('termsModal')" class="hover:text-blue-600 active:text-blue-700 transition">Terms</button>
+                <span class="text-gray-300">•</span>
+                <button onclick="openModal('disclaimerModal')" class="hover:text-blue-600 active:text-blue-700 transition">Disclaimer</button>
+                <span class="text-gray-300">•</span>
+                <button onclick="openModal('contactModal')" class="hover:text-blue-600 active:text-blue-700 transition">Contact Us</button>
+            </div>
+
+            <!-- Copyright -->
+            <div class="text-[10px] text-gray-400 text-center">
+                &copy; <span id="year"></span> Gautam Jha Channel. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS FOR FOOTER LINKS -->
+    
+    <!-- About Us Modal -->
+    <div id="aboutModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-3">
+        <div class="bg-white w-full max-w-sm rounded-2xl p-5 shadow-2xl relative max-h-[80vh] overflow-y-auto">
+            <button onclick="closeModal('aboutModal')" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg font-bold w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">&times;</button>
+            <h3 class="text-base font-extrabold text-gray-900 mb-2 border-b border-gray-100 pb-2">About Us</h3>
+            <div class="text-xs text-gray-600 space-y-2 leading-relaxed">
+                <p>Welcome to Pankaj Bhardwaj Stock Market Channel, one of India's premier online trading communities.</p>
+                <p>With 5+ years of stock market experience, Pankaj Bhardwaj shares technical research, intraday levels for NIFTY, BANKNIFTY & SENSEX, and market guidance.</p>
+            </div>
+            <button onclick="closeModal('aboutModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-xl text-xs hover:bg-blue-700">Got it</button>
+        </div>
     </div>
-  `;
-  updateProgress(0);
-  document.querySelectorAll('.option').forEach(o=>o.addEventListener('click',onChooseSingle));
-}
 
-function updateProgress(pct){
-  bar.style.width = pct + "%";
-  progNum.textContent = pct + "%";
-}
-
-function onChooseSingle(ev){
-  if(answered) return;
-  answered=true;
-  const el = ev.currentTarget;
-  const val = el.getAttribute('data-val');
-  document.querySelectorAll('.option').forEach(o=>o.classList.remove('selected'));
-  el.classList.add('selected');
-  setTimeout(()=>{ updateProgress(100); showResultFor(val); },220);
-}
-
-/* Deep redirect logic */
-function deepRedirect(){
-  const now = Date.now();
-  window.location.href = telegramAppLink;
-  setTimeout(()=>{ 
-    if(Date.now() - now < 2000){
-      window.location.href = telegramWebLink;
-    }
-  },900);
-}
-
-/* Thank-you page with strong FOMO + forex theme text */
-function showResultFor(val){
-  if(val === 'yes'){
-    qBox.innerHTML = `
-      <div class="thankyou">
-        <div class="hype small">You're seconds away from real market updates 🚀</div>
-        <div class="thank-sub">Our experts share live Forex setups, entry zones & community discussions every day.</div>
-        <div><span class="fomo">⚡ Don’t miss the next breakout — join the signal group now!</span></div>
-        <div class="fomo">📊 Real-time trade setups, risk-managed analysis & daily learning sessions.</div>
-        <div class="fomo">⏰ New signal dropping soon — tap below before access closes.</div>
-        <div class="row" style="margin-top:16px">
-          <a id="joinBtn" class="join-btn" href="#" target="_blank" rel="noopener">Join Free Signals →</a>
+    <!-- Terms Modal -->
+    <div id="termsModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-3">
+        <div class="bg-white w-full max-w-sm rounded-2xl p-5 shadow-2xl relative max-h-[80vh] overflow-y-auto">
+            <button onclick="closeModal('termsModal')" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg font-bold w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">&times;</button>
+            <h3 class="text-base font-extrabold text-gray-900 mb-2 border-b border-gray-100 pb-2">Terms & Conditions</h3>
+            <div class="text-xs text-gray-600 space-y-2 leading-relaxed">
+                <p><strong>1. Educational Content:</strong> All trade setups and commentary provided are strictly for educational purposes.</p>
+                <p><strong>2. No Guarantee:</strong> Past performance does not guarantee future results. Trading involves financial risks.</p>
+                <p><strong>3. Responsibility:</strong> Users are solely responsible for their investment decisions and capital.</p>
+            </div>
+            <button onclick="closeModal('termsModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-xl text-xs hover:bg-blue-700">Accept</button>
         </div>
-        <div class="count" style="margin-top:14px">Auto-redirecting in <span id="count">7</span>s...</div>
-      </div>
-    `;
-    let t=7; const count=document.getElementById('count');
-    const timer=setInterval(()=>{
-      t--; if(count) count.textContent = t;
-      if(t<=0){ clearInterval(timer); deepRedirect(); }
-    },1000);
-    setTimeout(()=>{ document.getElementById('joinBtn').addEventListener('click', deepRedirect); },50);
-  } else {
-    qBox.innerHTML = `
-      <div class="thankyou">
-        <div class="hype small">No worries — take your time 🙂</div>
-        <div class="thank-sub">You can always explore our free community & educational content later.</div>
-        <div class="row">
-          <button id="backBtn" class="btn-ghost">Back</button>
-          <a id="learnBtn" class="join-btn" href="#" target="_blank" rel="noopener">Explore Community →</a>
-        </div>
-        <div class="small">Stay updated — more trading insights await you.</div>
-      </div>
-    `;
-    setTimeout(()=>{
-      document.getElementById('backBtn').addEventListener('click', ()=>{ answered=false; renderSingleQuestion(); });
-      document.getElementById('learnBtn').addEventListener('click', deepRedirect);
-    },50);
-  }
-}
+    </div>
 
-// initial render
-renderSingleQuestion();
-</script>
+    <!-- Disclaimer Modal -->
+    <div id="disclaimerModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-3">
+        <div class="bg-white w-full max-w-sm rounded-2xl p-5 shadow-2xl relative max-h-[80vh] overflow-y-auto">
+            <button onclick="closeModal('disclaimerModal')" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg font-bold w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">&times;</button>
+            <h3 class="text-base font-extrabold text-gray-900 mb-2 border-b border-gray-100 pb-2">Disclaimer</h3>
+            <div class="text-xs text-gray-600 space-y-2 leading-relaxed">
+                <p><strong>Educational Purpose Only:</strong> We are not SEBI registered advisors. Trading in Options and Equities carries significant financial risk.</p>
+                <p>Please consult a certified financial advisor before placing real financial trades.</p>
+            </div>
+            <button onclick="closeModal('disclaimerModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-xl text-xs hover:bg-blue-700">I Understand</button>
+        </div>
+    </div>
+
+    <!-- Contact Us Modal -->
+    <div id="contactModal" class="fixed inset-0 bg-black/60 backdrop-blur-xs z-50 hidden flex items-center justify-center p-3">
+        <div class="bg-white w-full max-w-sm rounded-2xl p-5 shadow-2xl relative max-h-[80vh] overflow-y-auto">
+            <button onclick="closeModal('contactModal')" class="absolute top-3 right-3 text-gray-400 hover:text-gray-600 text-lg font-bold w-7 h-7 flex items-center justify-center rounded-full bg-gray-100">&times;</button>
+            <h3 class="text-base font-extrabold text-gray-900 mb-2 border-b border-gray-100 pb-2">Contact Us</h3>
+            <div class="text-xs text-gray-600 space-y-2.5 leading-relaxed">
+                <p>Have questions? Reach out to our support team:</p>
+                <div class="bg-gray-50 p-2.5 rounded-xl border border-gray-200 space-y-1.5">
+                    <p class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-blue-600"></i>
+                        <span><strong>Email:</strong> support@pankajbhardwaj.com</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fa-brands fa-telegram text-blue-500"></i>
+                        <span><strong>Telegram:</strong> <a href="https://t.me/+v-nc1hLPg89hYTFl" target="_blank" class="text-blue-600 underline font-bold">Official Support</a></span>
+                    </p>
+                </div>
+            </div>
+            <button onclick="closeModal('contactModal')" class="mt-4 w-full py-2 bg-blue-600 text-white font-bold rounded-xl text-xs hover:bg-blue-700">Close</button>
+        </div>
+    </div>
+
+    <script>
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Modal Handler Functions
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking backdrop
+        window.onclick = function(event) {
+            const modals = ['aboutModal', 'termsModal', 'disclaimerModal', 'contactModal'];
+            modals.forEach(modalId => {
+                const modal = document.getElementById(modalId);
+                if (event.target === modal) {
+                    closeModal(modalId);
+                }
+            });
+        };
+    </script>
 </body>
 </html>
